@@ -1,0 +1,26 @@
+{
+  "manifest": {
+    "voiceName":"MALE_1"
+  },
+  "actions": [
+    {
+      "description": "Default Welcome Intent",
+      "name": "MAIN",
+      "fulfillment": {
+        "conversationName": "conversation_1"
+      },
+      "intent": {
+        "name": "actions.intent.MAIN"
+      }
+    }
+  ],
+  "conversations": {
+    "conversation_1": {
+      "name": "conversation_1",
+      "url": "https://us-central1-pesquisania-e959e.cloudfunctions.net/atendeBB",
+      "fulfillmentApiVersion": 2
+    }
+  },
+  "locale":"pt-BR"
+}
+
